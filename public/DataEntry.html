@@ -9,7 +9,7 @@ and open the template in the editor.
     <title>Data Entry</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script id="FoodSelected" >prototype</script>
+    <script id="FoodSelected" >prototype;</script>
   </head>
   <body>
     <div>
@@ -25,11 +25,15 @@ and open the template in the editor.
       Salt <input type="text" name="Salt" value="0"/><br>
     </div>
 
+    <div id="Output">
+      <textarea name="Notes" rows="10" cols="40"></textarea>
+    </div>
+    
     <div>
       <input type="submit" value="Add" /><br>
     </div>
 
-    <div>
+    <div id="table">
       <table border="1" cellpadding="1">
         <thead>
           <tr>
@@ -61,5 +65,4 @@ and open the template in the editor.
         </tbody>
       </table>
     </div>
-
   </body>
