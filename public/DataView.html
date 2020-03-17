@@ -11,8 +11,11 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div>
-        <select name="Foods" width="400" onselect="FoodSelected()">
+    <script id="eatFood">
+      window.showModalDialog("EATING");
+    </script>    
+    <div onselect="eatFood()">
+        <select name="Foods" width="400" onselect="eatFood()">
         <option>Admiral</option>
         <option>Apple</option>
         <option>Bacon</option>
@@ -28,54 +31,6 @@ and open the template in the editor.
         <option>Coconut</option>
         <option>Cod, Salmon, Prawn Pie</option>
         <option>Coleslaw</option>
-        <option>Corned</option>
-        <option>Cornish</option>
-        <option>Cottage</option>
-        <option>Crisps</option>
-        <option>Custard</option>
-        <option>Deep</option>
-        <option>Digestives</option>
-        <option>Disco</option>
-        <option>Egg</option>
-        <option>Ferrero</option>
-        <option>French</option>
-        <option>Fruit</option>
-        <option>Gammon</option>
-        <option>Garlic & Coriander</option>
-        <option>Gold</option>
-        <option>Hoisin</option>
-        <option>Instanoodles</option>
-        <option>Jaffa</option>
-        <option>Large</option>
-        <option>Lasagne</option>
-        <option>Madagaskan</option>
-        <option>Malted</option>
-        <option>Mandarin</option>
-        <option>Mariners</option>
-        <option>Meatballs</option>
-        <option>Mini</option>
-        <option>Mushroom</option>
-        <option>Naan Bread</option>
-        <option>Nik</option>
-        <option>Oat/Honey</option>
-        <option>Oat</option>
-        <option>Olive</option>
-        <option>Pork</option>
-        <option>Puff</option>
-        <option>Rich</option>
-        <option>Sausage</option>
-        <option>Scone</option>
-        <option>Seeded</option>
-        <option>Smoked</option>
-        <option>Spaghetti</option>
-        <option>Spring</option>
-        <option>Steak</option>
-        <option>Sweetcorn</option>
-        <option>Tomato</option>
-        <option>Tuna</option>
-        <option>Turkey</option>
-        <option>Ultimate</option>
-        <option>Wholemeal</option>
       </select>
     </div>
     <div id="Output">
