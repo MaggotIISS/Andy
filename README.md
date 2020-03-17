@@ -1,8 +1,9 @@
 # Andy
- Magogz & Smazogz proudly present............
+Magogz & Smazogz proudly present............
 
 Intake calculator.
-G3 - Get Good Grub!
+G3 - Get Good Grub
+TYG - Trust Your Gut
 
 Instructions:  Download zip from Main Page of project ( GREEN BUTTON )
 or download Git Desktop and then use (GREEN BUTTON) and `Open in Desktop` TO 
