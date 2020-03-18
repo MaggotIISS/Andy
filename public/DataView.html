@@ -15,7 +15,7 @@ and open the template in the editor.
       window.showModalDialog("EATING");
     </script>    
     <div onselect="eatFood()">
-        <select name="Foods" width="400" onselect="eatFood()">
+        <select name="Foods" width="400" onselect="eatFood">
         <option>Admiral</option>
         <option>Apple</option>
         <option>Bacon</option>
@@ -32,6 +32,7 @@ and open the template in the editor.
         <option>Cod, Salmon, Prawn Pie</option>
         <option>Coleslaw</option>
       </select>
+      <input type="button" value="eatFood" name="eatButton" />
     </div>
     <div id="Output">
       <textarea name="Food Intake" rows="10" cols="40"></textarea>

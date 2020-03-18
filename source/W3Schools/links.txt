@@ -1,0 +1,25 @@
+https://www.w3schools.com/js/default.asp
+https://www.w3schools.com/html/default.asp
+
+//----------------------------------------------------------
+// MyFirstJavaScript.html
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
+//----------------------------------------------------------
+
+<!--  XML Comments are OK in most html -->
+
+https://www.w3schools.com/js/js_examples.asp
+
