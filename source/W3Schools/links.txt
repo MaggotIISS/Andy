@@ -1,8 +1,7 @@
 https://www.w3schools.com/js/default.asp
-https://www.w3schools.com/html/default.asp
-
 //----------------------------------------------------------
 // MyFirstJavaScript.html
+//----------------------------------------------------------
 <!DOCTYPE html>
 <html>
 <body>
@@ -15,11 +14,88 @@ Click me to display Date and Time.</button>
 
 <p id="demo"></p>
 
+<!--  XML Comments are OK in most html -->
+
 </body>
 </html> 
 //----------------------------------------------------------
 
-<!--  XML Comments are OK in most html -->
+https://www.w3schools.com/html/default.asp
+
+https://www.w3schools.com/css/default.asp
 
 https://www.w3schools.com/js/js_examples.asp
+
+https://www.w3schools.com/js/js_input_examples.asp
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions
+//----------------------------------------------------------
+// tryjs_functions.html
+//----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Functions</h2>
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+<p id="demo"></p>
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+</script>
+</body>
+</html>
+//----------------------------------------------------------
+
+https://www.w3schools.com/js/js_ex_dom.asp
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_table_cells
+//----------------------------------------------------------
+//	tryjs_dom_table_cells.html
+//----------------------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getCellContent(id) {
+  var x = document.getElementById(id).rows[0].cells;
+  document.getElementById("demo").innerHTML = x[0].innerHTML;
+}
+</script>
+</head>
+<body>
+
+<table id="myTable" style="border: 1px solid black">
+  <tr>
+    <td>cell 1</td>
+    <td>cell 2</td>
+  </tr>
+  <tr>
+    <td>cell 3</td>
+    <td>cell 4</td>
+  </tr>
+</table>
+
+<p>
+<input type="button" onclick="getCellContent('myTable')" value="Display first cell">
+</p>
+
+<p id="demo"></p>
+
+</body>
+</html>
+//----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 
