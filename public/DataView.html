@@ -11,31 +11,35 @@ and open the template in the editor.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script id="eatFood">
-      window.showModalDialog("EATING");
-    </script>    
-    <div onselect="eatFood()">
-        <select name="Foods" width="400" onselect="eatFood">
-        <option>Admiral</option>
-        <option>Apple</option>
-        <option>Bacon</option>
-        <option>Baked</option>
-        <option>Benefit</option>
-        <option>Broadbeans</option>
-        <option>Camenbert</option>
-        <option>Cheerios</option>
-        <option>Cheese</option>
-        <option>Cheeselets</option>
-        <option>Chick</option>
-        <option>Chocolate</option>
-        <option>Coconut</option>
-        <option>Cod, Salmon, Prawn Pie</option>
-        <option>Coleslaw</option>
+
+    <div>
+      <select id="List" name="Foods" width="400" onselect="show()">
+        <option>Food Item 1</option>
+        <option>Food Item 2</option>
+        <option>Food Item 3</option>
       </select>
-      <input type="button" value="eatFood" name="eatButton" />
+      <button onclick="addFood()">Add</button>
+      <script>
+        function addFood() {
+          var food = document.getElementById("List").value;
+          <!-- document.getElementById("demo").innerHTML = "Hello World"; -->
+          document.getElementById("ta").innerHTML += food + "\n";
+        }
+      </script>    
     </div>
-    <div id="Output">
-      <textarea name="Food Intake" rows="10" cols="40"></textarea>
+
+    <div>
+      <textarea id="ta" name="Food Intake" rows="10" cols="40"></textarea>
     </div>
-  </body>
-</html>
+
+    <div>
+      <script>
+        function done() {
+          document.getElementById("ta").innerHTML += "calculating" + "\n";
+          
+        }
+      </script>    
+      <button text="Done" onclick="done()" type="button" value="Done" name="btn">DONE</button>
+        </div>
+      </body>
+    </html>

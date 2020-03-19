@@ -49,6 +49,10 @@ document.getElementById("demo").innerHTML = myFunction(4, 3);
 //----------------------------------------------------------
 
 https://www.w3schools.com/js/js_ex_dom.asp
+//----------------------------------------------------------
+//  js_ex_dom.asp.html
+//----------------------------------------------------------
+//----------------------------------------------------------
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_table_cells
 //----------------------------------------------------------
@@ -65,7 +69,6 @@ function getCellContent(id) {
 </script>
 </head>
 <body>
-
 <table id="myTable" style="border: 1px solid black">
   <tr>
     <td>cell 1</td>
@@ -76,13 +79,10 @@ function getCellContent(id) {
     <td>cell 4</td>
   </tr>
 </table>
-
 <p>
 <input type="button" onclick="getCellContent('myTable')" value="Display first cell">
 </p>
-
 <p id="demo"></p>
-
 </body>
 </html>
 //----------------------------------------------------------
