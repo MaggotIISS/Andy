@@ -9,28 +9,33 @@ and open the template in the editor.
     <title>Data Entry</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script id="FoodSelected" >eatFood();</script>
   </head>
   <body>
     <div>
-      Product <input type="text" name="Product" value="0"/><br>
-      Quantity <input type="text" name="Quantity" value="0"/><br>
-      Brand <input type="text" name="Brand" value="0"/><br>
-      Energy (Kal) <input type="text" name="Energy" value="0"/><br>
-      Fat (g) <input type="text" name="Fat (g)" value="0"/><br>
-      Carbs (g) <input type="text" name="Carbs" value="0"/><br>
-      Carbs (sugar) <input type="text" name="sugar" value="0"/><br>
-      Fibre <input type="text" name="Fibre" value="0"/><br>
-      Protein <input type="text" name="Protein" value="0"/><br>
-      Salt <input type="text" name="Salt" value="0"/><br>
+      Product <input type="text" name="Product" value="EMPTY"/><br>
+      Quantity <input type="text" name="Quantity" value="EMPTY"/><br>
+      Brand <input type="text" name="Brand" value="EMPTY"/><br>
+      Energy (kCal) <input type="text" name="Energy" value="EMPTY"/><br>
+      Fat (g) <input type="text" name="Fat (g)" value="EMPTY"/><br>
+      Carbs (g) <input type="text" name="Carbs" value="EMPTY"/><br>
+      Carbs (sugar) <input type="text" name="sugar" value="EMPTY"/><br>
+      Fibre <input type="text" name="Fibre" value="EMPTY"/><br>
+      Protein <input type="text" name="Protein" value="EMPTY"/><br>
+      Salt <input type="text" name="Salt" value="EMPTY"/><br>
     </div>
 
     <div id="Output">
       <textarea name="Notes" rows="10" cols="40"></textarea>
     </div>
-    
+
     <div>
-      <input type="submit" value="Add" /><br>
+      <script>
+        function done() {
+          //document.getElementById("ta").innerHTML += "calculating" + "\n";
+          this.window.alert("DONE");
+        };
+        </script>
+        <button text="Done" onclick="done()" type="button" value="Done" name="btn">DONE</button>
     </div>
 
     <div id="table">
