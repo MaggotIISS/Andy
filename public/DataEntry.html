@@ -12,16 +12,16 @@ and open the template in the editor.
   </head>
   <body>
     <div>
-      Product <input type="text" name="Product" value="EMPTY"/><br>
-      Quantity <input type="text" name="Quantity" value="EMPTY"/><br>
-      Brand <input type="text" name="Brand" value="EMPTY"/><br>
-      Energy (kCal) <input type="text" name="Energy" value="EMPTY"/><br>
-      Fat (g) <input type="text" name="Fat (g)" value="EMPTY"/><br>
-      Carbs (g) <input type="text" name="Carbs" value="EMPTY"/><br>
-      Carbs (sugar) <input type="text" name="sugar" value="EMPTY"/><br>
-      Fibre <input type="text" name="Fibre" value="EMPTY"/><br>
-      Protein <input type="text" name="Protein" value="EMPTY"/><br>
-      Salt <input type="text" name="Salt" value="EMPTY"/><br>
+      Product <input id="product" type="text" name="Product" value="EMPTY"/><br>
+      Quantity <input id="quantity" type="text" name="Quantity" value="EMPTY"/><br>
+      Brand <input id="brand" type="text" name="Brand" value="EMPTY"/><br>
+      Energy (kCal) <input id="energy" type="text" name="Energy" value="EMPTY"/><br>
+      Fat (g) <input id="fat" type="text" name="Fat (g)" value="EMPTY"/><br>
+      Carbs (g) <input id="g" type="text" name="Carbs" value="EMPTY"/><br>
+      Carbs (sugar) <input id="sugar" type="text" name="sugar" value="EMPTY"/><br>
+      Fibre <input id="fibre" type="text" name="Fibre" value="EMPTY"/><br>
+      Protein <input id="protein" type="text" name="Protein" value="EMPTY"/><br>
+      Salt <input id="Salt" type="text" name="Salt" value="EMPTY"/><br>
     </div>
 
     <div id="Output">
@@ -29,17 +29,7 @@ and open the template in the editor.
     </div>
 
     <div>
-      <script>
-        function done() {
-          //document.getElementById("ta").innerHTML += "calculating" + "\n";
-          this.window.alert("DONE");
-        };
-        </script>
-        <button text="Done" onclick="done()" type="button" value="Done" name="btn">DONE</button>
-    </div>
-
-    <div id="table">
-      <table border="1" cellpadding="1">
+      <table id="table"  border="1" cellpadding="1">
         <thead>
           <tr>
             <th>Product</th>
@@ -56,18 +46,75 @@ and open the template in the editor.
         </thead><br>
         <tbody>
           <tr>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
-            <td>BLANK</td>
+            <td id="prod" >BLANK</td>
+            <td id="quan">BLANK</td>
+            <td id="bran">BLANK</td>
+            <td id="ener">BLANK</td>
+            <td id="carg">BLANK</td>
+            <td id="cars">BLANK</td>
+            <td id="fibr">BLANK</td>
+            <td id="prot">BLANK</td>
+            <td id="salt">BLANK</td>
             <td>BLANK</td>
           </tr>
         </tbody>
       </table>
+
+      <div>
+        <script>
+          function doIt() {
+            //document.getElementById("ta").innerHTML += "calculating" + "\n";
+            //var tmp = document.getElementById("product").value;
+            //console.log(tmp);
+
+            //var tab = document.getElementById("table").rows(1).cells[0].valueOf();
+            //console.log(tan);
+            var txt = "";
+            
+            txt = document.getElementById("product").value;
+            document.getElementById("prod").innerHTML = txt;
+
+            txt = document.getElementById("product").value;
+            document.getElementById("quan").innerHTML = txt;
+
+            txt = document.getElementById("quantity").value;
+            document.getElementById("bran").innerHTML = txt;
+
+            txt = document.getElementById("brand").value;
+            document.getElementById("ener").innerHTML = txt;
+
+            txt = document.getElementById("energy").value;
+            document.getElementById("carg").innerHTML = txt;
+
+            txt = document.getElementById("fat").value;
+            document.getElementById("cars").innerHTML = txt;
+
+            txt = document.getElementById("fibre").value;
+            document.getElementById("fibr").innerHTML = txt;
+
+            txt = document.getElementById("protein").value;
+            document.getElementById("prot").innerHTML = txt;
+
+            txt = document.getElementById("Salt").value;
+            document.getElementById("salt").innerHTML = txt;
+
+
+
+
+            console.log("Product=" + document.getElementById("table").rows[1].cells[0].innerHTML);
+            console.log("Quantity=" + document.getElementById("table").rows[1].cells[1].innerHTML);
+            console.log("Brand=" + document.getElementById("table").rows[1].cells[2].innerHTML);
+            console.log("Energy=" + document.getElementById("table").rows[1].cells[3].innerHTML);
+            console.log("Fat=" + document.getElementById("table").rows[1].cells[4].innerHTML);
+            console.log("Carbs (g)=" + document.getElementById("table").rows[1].cells[5].innerHTML);
+            console.log("Carbs (sugar)=" + document.getElementById("table").rows[1].cells[6].innerHTML);
+            console.log("Fibre=" + document.getElementById("table").rows[1].cells[7].innerHTML);
+            console.log("Protein=" + document.getElementById("table").rows[1].cells[8].innerHTML);
+            console.log("Salt=" + document.getElementById("table").rows[1].cells[9].innerHTML);
+          }
+        </script>
+        <button text="ADD" onclick="doIt()" type="button" value="Done" name="btn">ADD</button>
+      </div>
+
     </div>
   </body>
