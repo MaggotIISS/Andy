@@ -2,3 +2,8 @@ Early
 Mid
 Late
 Later
+Breakfast
+Snack
+Lunch
+Evening
+Night
