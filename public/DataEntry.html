@@ -25,48 +25,12 @@ and open the template in the editor.
     </div>
 
     <div id="Output">
-      <textarea name="Notes" rows="10" cols="40"></textarea>
+      <textarea id="note" name="Notes" rows="10" cols="40">EMPTY</textarea>
     </div>
-
-    <div>
-      <table id="table"  border="1" cellpadding="1">
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Brand</th>
-
-            <th>Energy</th>
-            <th>Fat</th>
-            <th>Carbs</th>
-
-            <th>Ssugar</th>
-            <th>Fibre</th>
-            <th>Protein</th>
-
-            <th>Salt</th>
-          </tr>
-        </thead><br>
-        <tbody>
-          <tr>
-            <td id="prod" >BLANK</td>
-            <td id="quan">BLANK</td>
-            <td id="bran">BLANK</td>
-
-            <td id="ener">BLANK</td>
-            <td id="fat">BLANK</td>
-            <td id="carb">BLANK</td>
-
-            <td id="suga">BLANK</td>
-            <td id="fibr">BLANK</td>
-            <td id="prot">BLANK</td>
-
-            <td id="salt">BLANK</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div>
+    
+    
+          <div>
+        <button text="ADD" onclick="doIt()" type="button" value="Done" name="btn">ADD</button>
         <script>
           function doIt() {
             var txt = "";
@@ -93,6 +57,8 @@ and open the template in the editor.
             document.getElementById("prot").innerHTML = txt;
             txt = document.getElementById("saltt").value;
             document.getElementById("salt").innerHTML = txt;
+            txt = document.getElementById("note").value;
+            document.getElementById("Note").innerHTML = txt;
 
             console.log("Product=" + document.getElementById("table").rows[1].cells[0].innerHTML);
             console.log("Quantity=" + document.getElementById("table").rows[1].cells[1].innerHTML);
@@ -107,10 +73,52 @@ and open the template in the editor.
             console.log("Protein=" + document.getElementById("table").rows[1].cells[8].innerHTML);
 
             console.log("Salt=" + document.getElementById("table").rows[1].cells[9].innerHTML);
+            console.log("Notes=" + document.getElementById("Notes").innerHTML);
           }
         </script>
-        <button text="ADD" onclick="doIt()" type="button" value="Done" name="btn">ADD</button>
       </div>
+
+
+    <div>
+      <table id="table"  border="1" cellpadding="1">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Brand</th>
+
+            <th>Energy</th>
+            <th>Fat</th>
+            <th>Carbs</th>
+
+            <th>Ssugar</th>
+            <th>Fibre</th>
+            <th>Protein</th>
+
+            <th>Salt</th>
+            <th>Note</th>
+          </tr>
+        </thead><br>
+        <tbody>
+          <tr>
+            <td id="prod" >BLANK</td>
+            <td id="quan">BLANK</td>
+            <td id="bran">BLANK</td>
+
+            <td id="ener">BLANK</td>
+            <td id="fat">BLANK</td>
+            <td id="carb">BLANK</td>
+
+            <td id="suga">BLANK</td>
+            <td id="fibr">BLANK</td>
+            <td id="prot">BLANK</td>
+
+            <td id="salt">BLANK</td>
+            <td id="Note">BLANK</td>
+          </tr>
+        </tbody>
+      </table>
+
 
     </div>
   </body>
